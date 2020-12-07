@@ -18,24 +18,25 @@ class Types_and_Strings:
         print("Last character : " + message[-1])
 
         # use slice notation
-        print("Print from position 3 to end: " + message[3:])
-        print("Print up to prosition 3: " + message[:3])
-        print("Prints everthing via slice: " + message[:])
+        print("Print from position 1: " + message[0:1])
+        print("Print up to position 3: " + message[:3])
 
         # escaping a character
         print("He said \"that\'s fantastic\"!")
+        raw_string = r"He said 'that's fantastic'!"
+        print(raw_string)
 
         # find all a's in the input word and count how many there are
-        lower_message = message.lower()
-        print("all lower characters: " +lower_message)
-        print("The first occurence of a is at position: " + str(lower_message.find('a')))
-        print("There are "+ str(lower_message.count('a'))+ " a's in the word.")
-        print("Total character count is: " +str(len(lower_message)))
+        print(message.find('a'))
+        print(message.count('a'))
+        # print("The first occurence of a is at position: " + str(lower_message.find('a')))
+        # print("There are "+ str(lower_message.count('a'))+ " a's in the word.")
+        # print("Total character count is: " +str(len(lower_message)))
 
         # replace all occurences of the character a with the - sign
         # try this first by assignment of a location in a string and
         # observe what happens, then use replace()
-        print(lower_message.replace('a', '-'))
+        print(message.replace('a', '-'))
 
 
     def play_with_lists(self):
